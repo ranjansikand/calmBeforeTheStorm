@@ -11,6 +11,8 @@ public class Weapons : MonoBehaviour
     Controls controls;
     Rigidbody2D rb;
 
+    [SerializeField] PlayerSFX sfx;
+
     [SerializeField] Transform leftCannons, rightCannons, forwardCannons;
     [SerializeField] Rigidbody2D cannonBall;
 
@@ -82,6 +84,8 @@ public class Weapons : MonoBehaviour
             projectile.transform.localPosition = new Vector3(Random.Range(-1f, 1f), 0, 0);
             projectile.AddForce(leftCannons.up * firingForce, ForceMode2D.Impulse);
         }
+
+        sfx.PlaySound(3);
     }
 
     IEnumerator RightSideCannons() {
@@ -93,6 +97,8 @@ public class Weapons : MonoBehaviour
             projectile.transform.localPosition = new Vector3(Random.Range(-1f, 1f), 0, 0);
             projectile.AddForce(rightCannons.up * firingForce, ForceMode2D.Impulse);
         }
+
+        sfx.PlaySound(3);
     }
 
     IEnumerator ForwardCannons() {
@@ -103,6 +109,7 @@ public class Weapons : MonoBehaviour
             projectile.transform.localPosition = new Vector3(Random.Range(-1f, 1f), 0, 0);
             projectile.AddForce(forwardCannons.up * firingForce, ForceMode2D.Impulse);
         }
-    
+
+        sfx.PlaySound(3);
     }
 }

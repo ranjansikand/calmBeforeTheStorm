@@ -7,6 +7,8 @@ public class CloudMovement : MonoBehaviour
 {
     Rigidbody2D rb;
 
+    [SerializeField] float movementSpeed;
+
     void Awake() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -20,7 +22,7 @@ public class CloudMovement : MonoBehaviour
             float time = Random.Range(1f, 20f);
             
             Vector3 destination = new Vector3(Random.Range(-50f, 50f), Random.Range(-50f, 50f), 0);
-            Vector3 direction = (destination - transform.position).normalized * 4f;
+            Vector3 direction = (destination - transform.position).normalized * movementSpeed;
             
             rb.velocity = direction;
             yield return new WaitForSeconds(time);

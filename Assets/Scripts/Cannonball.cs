@@ -12,4 +12,9 @@ public class Cannonball : MonoBehaviour
     void Delete() {
         if (gameObject.activeSelf) Destroy(gameObject);
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        var damagedObj = other.gameObject.GetComponent<Health>();
+        damagedObj?.Damage(3);
+    }
 }

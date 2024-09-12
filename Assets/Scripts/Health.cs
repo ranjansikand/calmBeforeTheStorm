@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] int maxHealth = 10;
+
+    [SerializeField] protected int maxHealth = 10;
+
+
     public int currentHealth {get; set; }
 
-    private void Awake() {
+    protected virtual void Awake() {
         currentHealth = maxHealth;
     }
 
 
-    public void Damage(int damage) {
-        currentHealth -= damage;
-
-        if (currentHealth <= 0) {
-            Destroy(gameObject);
-        }
+    public virtual void Damage(int damage) {
+        currentHealth = Mathf.Clamp(currentHealth - damage, 0, maxHealth);
     }
 }
