@@ -37,21 +37,27 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Resources\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
+     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
      <Compile Include="Assets\Resources\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
      <Compile Include="Assets\Scripts\Storm.cs" />
-     <Compile Include="Assets\Scripts\Cannonball.cs" />
+     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\Player\Cannonball.cs" />
      <Compile Include="Assets\Scripts\CloudMovement.cs" />
      <Compile Include="Assets\Resources\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
-     <Compile Include="Assets\Scripts\Weapons.cs" />
-     <Compile Include="Assets\Scripts\Ship.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\Player\Weapons.cs" />
+     <Compile Include="Assets\Scripts\EnemyShip.cs" />
+     <Compile Include="Assets\Scripts\Player\Ship.cs" />
      <Compile Include="Assets\Resources\Controls.cs" />
      <Compile Include="Assets\Scripts\Health.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerSFX.cs" />
      <Compile Include="Assets\Resources\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
-     <Compile Include="Assets\Scripts\StormSpawner.cs" />
-     <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-     <Compile Include="Assets\Scripts\EnemyShip.cs" />
-     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
-     <Compile Include="Assets\Scripts\PlayerSFX.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerStats.cs" />
+     <Compile Include="Assets\Scripts\UI\GoldCounter.cs" />
+     <Compile Include="Assets\Scripts\UI\TurnNumber.cs" />
+     <Compile Include="Assets\Scripts\UI\Upgrade.cs" />
+     <Compile Include="Assets\Scripts\UI\UISFX.cs" />
+     <Compile Include="Assets\Scripts\UI\UpgPanel.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Resources\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
