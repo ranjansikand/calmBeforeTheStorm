@@ -12,6 +12,7 @@ public class PlayerHealth : Health
     [SerializeField] ParticleSystem explosion, smallExplosion;
 
     [SerializeField] Collider2D boxCollider;
+    [SerializeField] GameObject leaderboard;
 
 
     protected override void Awake() {
@@ -33,8 +34,14 @@ public class PlayerHealth : Health
             boxCollider.enabled = false;
 
             Instantiate(explosion, transform);
+
+            Invoke(nameof(Leaderboard), 2f);
         } else {
             Instantiate(smallExplosion, transform);
         }
+    }
+
+    void Leaderboard() {
+        leaderboard.SetActive(true);
     }
 }

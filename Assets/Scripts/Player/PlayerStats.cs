@@ -16,4 +16,7 @@ public class PlayerStats {
 
     public static int damage = 1;
     public static int speed = 10;
+
+
+    public static int score { get { return Timer.CalculateScore(); }}
 }

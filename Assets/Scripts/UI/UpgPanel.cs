@@ -10,10 +10,16 @@ public class UpgPanel : MonoBehaviour
     [SerializeField] GameObject weapon, movement;
 
     [SerializeField] Ship playerShip;
+    [SerializeField] Weapons playerWeapon;
 
-    [SerializeField] TMP_Text acceleration, damage;
 
-    int accelerationLevel = 1, damageLevel = 1;
+    // Movement
+    [SerializeField] TMP_Text acceleration, maxSpeed, rotation;
+    int accelerationLevel = 1, speedLevel = 1, rotLevel;
+
+    // Weapons
+    [SerializeField] TMP_Text damage, range;
+    int damageLevel = 1, rangeLevel = 1;
 
     public void WeaponPanel() {
         UISFX.playClick(0);
@@ -44,6 +50,32 @@ public class UpgPanel : MonoBehaviour
         }
     }
 
+    public void MaxSpeed() {
+        if (PlayerStats.gold >= speedLevel * 5) {
+            UISFX.playClick(0);
+
+            PlayerStats.gold -= (speedLevel * 5);
+            playerShip.maxSpeed += 3;
+            speedLevel++;
+            maxSpeed.text = "Speed (" + speedLevel + ") - $" + (speedLevel * 5);
+        } else {
+            UISFX.playClick(1);
+        }
+    }
+
+    public void Rotation() {
+        if (PlayerStats.gold >= rotLevel * 5) {
+            UISFX.playClick(0);
+
+            PlayerStats.gold -= (rotLevel * 5);
+            playerShip.rotationSpeed += 3;
+            rotLevel++;
+            rotation.text = "Rotation (" + rotLevel + ") - $" + (rotLevel * 5);
+        } else {
+            UISFX.playClick(1);
+        }
+    }
+
     #endregion
 
 
@@ -57,6 +89,19 @@ public class UpgPanel : MonoBehaviour
             PlayerStats.damage++;
             damageLevel++;
             damage.text = "Damage (" + damageLevel + ") - $" + (damageLevel * 5);
+        } else {
+            UISFX.playClick(1);
+        }
+    }
+
+    public void Range() {
+        if (PlayerStats.gold >= rangeLevel * 5) {
+            UISFX.playClick(0);
+
+            PlayerStats.gold -= (rangeLevel * 5);
+            playerWeapon.firingForce++;
+            rangeLevel++;
+            range.text = "Range (" + rangeLevel + ") - $" + (rangeLevel * 5);
         } else {
             UISFX.playClick(1);
         }

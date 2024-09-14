@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.Unive
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary", "Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj", "{92799a68-6873-e5fe-5a22-21359f91d78e}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Danqzq.LeaderboardCreator", "Danqzq.LeaderboardCreator.csproj", "{6faea14d-393b-320a-12fe-39118502c4dd}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Editor", "Unity.ShaderGraph.Editor.csproj", "{1985f85b-f4f6-3315-86b8-cc46b783de49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{5c332341-59fc-b932-48f1-a07bae283930}"
@@ -101,6 +103,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.InternalAPIEditorBrid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.ShaderGraph.Utilities", "Unity.ShaderGraph.Utilities.csproj", "{7eee365e-918f-d909-8f2f-8d69d184384b}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaderboardCreatorEditor", "LeaderboardCreatorEditor.csproj", "{b46f3d93-c1dc-2f5d-174f-bc8b494000ef}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -152,6 +156,8 @@ Global
 		{1cb60d40-f237-b779-fc8e-78b9d3a1b5a9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92799a68-6873-e5fe-5a22-21359f91d78e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{92799a68-6873-e5fe-5a22-21359f91d78e}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6faea14d-393b-320a-12fe-39118502c4dd}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6faea14d-393b-320a-12fe-39118502c4dd}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1985f85b-f4f6-3315-86b8-cc46b783de49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1985f85b-f4f6-3315-86b8-cc46b783de49}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5c332341-59fc-b932-48f1-a07bae283930}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -206,6 +212,8 @@ Global
 		{124d09ff-f111-72be-7de4-bbf694da022a}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7eee365e-918f-d909-8f2f-8d69d184384b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7eee365e-918f-d909-8f2f-8d69d184384b}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b46f3d93-c1dc-2f5d-174f-bc8b494000ef}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b46f3d93-c1dc-2f5d-174f-bc8b494000ef}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,7 +2,6 @@
 
 
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,7 +15,7 @@ public class Weapons : MonoBehaviour
     [SerializeField] Transform leftCannons, rightCannons, forwardCannons;
     [SerializeField] Rigidbody2D cannonBall;
 
-    [SerializeField] float firingForce = 6.0f;
+    public float firingForce = 6.0f;
 
     Coroutine firingRoutine;
     WaitForSeconds cannonLoadTime = new WaitForSeconds(1f);
