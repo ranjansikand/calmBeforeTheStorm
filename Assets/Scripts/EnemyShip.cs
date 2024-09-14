@@ -16,8 +16,8 @@ public class EnemyShip : MonoBehaviour
     [SerializeField] float directionChangeInterval = 3f;
     [SerializeField] float rotationSpeed = 200f;
 
-    void Start()
-    {
+
+    void Start() {
         rb = GetComponent<Rigidbody2D>();
         StartCoroutine(ChangeDirectionRoutine());
     }
